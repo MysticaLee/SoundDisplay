@@ -1,0 +1,121 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 22:31:33 2020
+| Host         : LAPTOP-8K9SBMUC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    50 |
+| Unused register locations in slices containing registers |   172 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           18 |
+|      4 |            2 |
+|      6 |            1 |
+|      8 |            6 |
+|     10 |            1 |
+|     12 |            2 |
+|     14 |            1 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             544 |          108 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             178 |           32 |
+| Yes          | No                    | No                     |             254 |           51 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             332 |           47 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+------------------------------+------------------------------------+------------------+----------------+
+|       Clock Signal      |         Enable Signal        |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------+------------------------------------+------------------+----------------+
+|  d2/led_reg[11]/G0      |                              |                                    |                1 |              2 |
+|  d2/p_1_in              |                              | d2/led_reg[15]_i_2_n_0             |                1 |              2 |
+|  d2/seg0_reg[1]_i_2_n_0 |                              | d2/led_reg[5]_i_1_n_0              |                1 |              2 |
+|  d2/led_reg[12]/G0      |                              |                                    |                1 |              2 |
+|  d2/led_reg[8]/G0       |                              |                                    |                1 |              2 |
+|  d2/seg1_reg[5]/G0      |                              |                                    |                1 |              2 |
+|  d2/led_reg[9]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[5]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[4]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[6]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[7]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[10]/G0      |                              |                                    |                1 |              2 |
+| ~clk6p25_BUFG           |                              |                                    |                1 |              2 |
+|  d2/led_reg[2]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[3]/G0       |                              |                                    |                1 |              2 |
+|  d2/led_reg[14]/G0      |                              |                                    |                1 |              2 |
+|  d2/led_reg[13]/G0      |                              |                                    |                1 |              2 |
+|  d2/led_reg[1]/G0       |                              |                                    |                1 |              2 |
+|  d2/seg0_reg[6]_i_2_n_0 |                              | d2/led_reg[2]_i_1_n_0              |                1 |              4 |
+|  c3/freq                |                              |                                    |                1 |              4 |
+|  c3/freq                |                              | d3/p_0_in                          |                1 |              6 |
+|  d2/seg0_reg[5]_i_2_n_0 |                              | d2/sel0[14]                        |                1 |              8 |
+|  dev8/dev1/dut0/CLK     |                              |                                    |                1 |              8 |
+|  dev8/dev1/dut0/CLK     | dev8/dev1/dut2/E[0]          |                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG        |                              | d6/FSM_sequential_level[1]_i_1_n_0 |                3 |              8 |
+|  CLOCK_IBUF_BUFG        | d6/subpage[3]_i_1_n_0        |                                    |                3 |              8 |
+|  CLOCK_IBUF_BUFG        | dev8/idle_counter            |                                    |                1 |              8 |
+|  CLOCK_IBUF_BUFG        | d6/dev15/dut2/E[0]           |                                    |                5 |             10 |
+|  d5/dut0/Q_reg          |                              |                                    |                3 |             12 |
+|  d5/seg_reg[6]_i_2_n_0  |                              |                                    |                2 |             12 |
+|  c3/freq                | d3/seg[6]_i_2_n_0            | d3/p_0_in                          |                2 |             14 |
+|  sc/slowclk             |                              |                                    |                2 |             16 |
+|  dev4/dut0/Q_reg        |                              |                                    |                6 |             20 |
+|  clk6p25_BUFG           |                              |                                    |                7 |             22 |
+|  dev5/CLK               |                              |                                    |                3 |             24 |
+|  sc/slowclk             | dev1/CO[0]                   | d2/Max[11]_i_1_n_0                 |                2 |             24 |
+|  CLOCK_IBUF_BUFG        |                              | dev5/CLK                           |                3 |             24 |
+|  CLOCK_IBUF_BUFG        | sw_IBUF[10]                  | d6/FSM_sequential_level[1]_i_1_n_0 |                6 |             24 |
+| ~dev1/J_MIC3_Pin4_OBUF  |                              |                                    |                3 |             24 |
+|  CLOCK_IBUF_BUFG        | d6/pixel_data[15]_i_1__0_n_0 |                                    |                9 |             26 |
+|  clk6p25_BUFG           | dev8/E[0]                    |                                    |               11 |             32 |
+| ~clk6p25_BUFG           |                              | dev4/dut1/pb_reset                 |                5 |             34 |
+| ~clk6p25_BUFG           | dev2/delay[0]_i_1_n_0        | dev4/dut1/pb_reset                 |                5 |             40 |
+|  CLOCK_IBUF_BUFG        | d6/up[27]_i_2_n_0            | d6/dev15/dut2/up_reg[1]            |                7 |             54 |
+|  CLOCK_IBUF_BUFG        | d6/dev13/dut1/left_reg[0]    | d6/dev15/dut2/left_reg[0]          |                8 |             56 |
+|  CLOCK_IBUF_BUFG        | d6/dev15/dut2/right_reg[0]   | d6/dev15/dut2/right_reg[0]_0       |                8 |             56 |
+| ~clk6p25_BUFG           | dev2/state                   | dev4/dut1/pb_reset                 |                9 |             64 |
+| ~clk6p25_BUFG           |                              | dev2/spi_word[39]_i_1_n_0          |               16 |             90 |
+|  CLOCK_IBUF_BUFG        | sw_IBUF[10]                  |                                    |               21 |            162 |
+|  CLOCK_IBUF_BUFG        |                              |                                    |               64 |            370 |
++-------------------------+------------------------------+------------------------------------+------------------+----------------+
+
+
