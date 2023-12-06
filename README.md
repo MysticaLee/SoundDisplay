@@ -33,7 +33,7 @@ sw[4] | sw[5] | Feature Description | Image
 1 | 0 | Colour scheme 2 | ![oled4](assets/images/oled4.png)
 1 | 1 | Colour scheme 3 | ![oled5](assets/images/oled5.png)
 
-To freese the volume bar, **sw[6] == 1**
+To freeze the volume bar, **sw[6] == 1**
 
 ![oled6](assets/images/oled6.png)
 
